@@ -7,6 +7,12 @@
   "icons":{
     "128" :"itla_premium.png"
   },
+  "web_accessible_resources": [
+    {
+      "resources": ["success.mp3"],
+      "matches": ["https://plataformavirtual.itla.edu.do/*"]
+    }
+  ],
   "action": {
     "default_popup": "popup.html",
     "default_title": "ITLA Dark - Colores"
