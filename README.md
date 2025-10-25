@@ -10,6 +10,7 @@ Tema oscuro para la plataforma virtual del ITLA con colores personalizables y au
 - 8 colores personalizables
 - Autocompletado de login con cifrado AES-GCM
 - Diseño moderno con bordes redondeados
+- **Pomodoro Timer integrado** (25 min trabajo / 5 min descanso)
 
 ## Instalación
 
