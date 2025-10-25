@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "ITLA-Dark by Elier",
+  "version": "1.0",
+  "description": "Haciendo lo que Amadis no quiere hacer. Les presento ITLA 2.0",
+  "permissions": ["storage", "activeTab", "scripting"],
+  "icons":{
+    "128" :"itla_premium.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "ITLA Dark - Colores"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://plataformavirtual.itla.edu.do/login/index.php"],
+      "css": ["login.css"],
+      "js": ["login.js"]
+    },
+    {
+      "matches": ["https://plataformavirtual.itla.edu.do/*"],
+      "css": ["style.css"],
+      "js": ["content.js"]
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ITLA DARK</title>
+</head>
+<body>
+    <style>
+    body {
+      width: 200px;
+      padding: 10px;
+      font-family: sans-serif;
+      background: #1e1e1e;
+      color: white;
+      box-sizing: border-box; /* Buena práctica */
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 10px;
+      margin-top: 0;
+    }
+    .colors {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 8px;
+      justify-items: center;
+    }
+    .color {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      cursor: pointer;
+      border: 2px solid transparent;
+    }
+    .color:hover {
+      border-color: white;
+    }
+
+    a {
+      color: rgb(78, 140, 255);
+      font-size: 1rem;
+    }
+    img {
+      width: 75%;
+      margin: auto;
+    }
+    .medio {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    hr {
+      opacity: 0.5;
+      margin: 10px;
+    }
+    
+    .cta-button {
+      display: block; 
+      text-align: center;
+      margin-top: 15px;
+      text-decoration: none;
+      background-color: #a6a6a6;
+      color: black;
+      padding: 10px;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background-color 0.2s ease;
+    }
+    .cta-button:hover {
+      background-color: #c0c0c0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="medio">
+    <img src="itla_premium.png" alt="ITLA PLUS" />
+  </div>
+  <hr />
+
+  <h2>Color personalizado</h2>
+  <div class="colors">
+    <div class="color" data-color="#00ffff" style="background:#00ffff"></div>
+    <div class="color" data-color="#ffc670" style="background:#ffc670"></div>
+    <div class="color" data-color="#ff9595" style="background:#ff9595"></div>
+    <div class="color" data-color="#58b4ff" style="background:#58b4ff"></div>
+    <div class="color" data-color="#ef96ff" style="background:#ef96ff"></div>
+    <div class="color" data-color="#fff599" style="background:#fff599"></div>
+    <div class="color" data-color="#ff73a2" style="background:#ff73a2"></div>
+    <div class="color" data-color="#cacaca" style="background:#cacaca"></div>
+  </div>
+  <hr />
+
+  <div>
+    <h2>Mi Github:</h2>
+    <a href="https://github.com/elierdev/" target="_blank" rel="noopener noreferrer">
+      https://github.com/elierdev/
+    </a>
+  </div>
+  <div>
+    <h2>Hecho por Elier💙</h2>
+  </div>
+
+  <a class="cta-button" href="https://plataformavirtual.itla.edu.do/my/" target="_blank" rel="noopener noreferrer">
+    IR A LA PLATAFORMA
+  </a>
+  <script src="popup.js"></script>
+</body>
+</html>
+

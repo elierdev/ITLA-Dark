@@ -1,0 +1,436 @@
+:root {
+  --accent: #9a9a9a; /* color por defecto: var(--accent) */
+
+  --accent-cyan: #00ffff;
+  --accent-orange: #ffc670;
+  --accent-red: #ff9595;
+  --accent-blue: #58b4ff;
+  --accent-purple: #ef96ff;
+  --accent-yellow: #fff599;
+  --accent-pink: #ff73a2;
+  --accent-gray: #cacaca;
+
+  --accent-sec: #00FFFF7c; /* color por defecto: var(--accent) */
+
+  --accent-sec-cyan: #00ffff7c;
+  --accent-sec-orange: #ffc6707c;
+  --accent-sec-red: #ff95957c;
+  --accent-sec-blue: #58b4ff7c;
+  --accent-sec-purple: #ef96ff7c;
+  --accent-sec-yellow: #fff5997c;
+  --accent-sec-pink: #ff73a27c;
+
+  
+}
+
+
+
+progress::-webkit-progress-bar {
+  background-color: var(--accent); /* Color de fondo de la barra completa */
+}
+
+.progress-bar {
+    background-color: var(--accent) !important;
+}
+
+
+
+
+
+body section {
+    background-color: black  !important;
+    
+    color: gray !important;
+    border-radius: 16px !important;
+}
+
+html {
+    background: black !important;
+}
+
+hr {
+    background-color: gray !important;
+}
+
+a {
+    color: var(--accent) !important;
+    text-decoration: none !important;
+}
+
+.btn {
+    border-radius: 16px !important;
+    background: rgb(49, 49, 49) !important;
+    
+}
+
+.dashboard-card .dashboard-card-footer {
+    background-color: rgb(28, 28, 28) !important;
+    border-radius: 0px 0px 16px  16px !important;
+        
+}
+
+
+
+
+button {
+    color: var(--accent) !important;
+}
+
+.navbar {
+    background-color: rgb(28, 28, 28) !important;
+    
+}
+
+#page-footer {
+    background-color: rgb(28, 28, 28) !important;
+}
+
+.fa-inverse {
+    color: rgb(28, 28, 28) !important;
+}
+.btn-secondary {
+    border: none !important;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+aside {
+    border: none !important;
+}
+
+#page-wrapper  {
+    background-color: black !important;
+}
+
+#page {
+    background-color: black !important;
+}
+
+.list-group-item {
+    background-color: rgb(28, 28, 28) !important;
+    border-radius: 16px !important;
+    border: none !important;
+}
+
+span {
+    background-color: transparent !important;
+    color: white !important;
+}
+
+.course-summaryitem {
+    background-color: rgb(28, 28, 28) !important;
+    border-radius: 16px !important;
+}
+
+.dashboard-card-deck {
+    border-radius: 16px;
+}
+
+.course-info-container {
+    background-color: rgb(28, 28, 28) !important;
+}
+
+.list-group {
+    gap: 20px !important;
+}
+
+.list-group-item {
+    background: black !important;
+}
+
+.card {
+    border: none !important;
+    border-radius: 16px !important;
+}
+
+.dashboard-card-img {
+    border-radius: 16px 16px 0 0 !important;
+    background-image: url("https://i.imgur.com/M5qnYlm.jpeg") !important;
+}
+
+.progress {
+    border-radius: 10px !important;
+    background-color: rgb(108, 108, 108) !important;
+}
+
+[data-region="drawer"] {
+    background-color: black !important;
+}
+
+.list-group-item.active {
+    background-color: var(--accent) !important;
+    color: black !important;
+}
+
+.list-group-item:hover {
+    border:1px dashed var(--accent) !important;
+}
+
+.list-group-item-action:hover {
+    background-color: black !important;
+}
+
+.list-group-item-action:focus {
+    background-color: black !important;
+}
+
+
+.generaltable {
+    color: rgb(108, 108, 108) !important;
+}
+
+.bg-light {
+    background-color: black !important;
+}
+
+
+
+.page-header-headings {
+    background-color: var(--accent) !important;
+    
+}
+
+.page-context-header .page-header-headings h1 {
+    color: black !important;
+    font-weight: 600;
+}
+
+.breadcrumb {
+    background-color: rgb(28, 28, 28) !important;
+    color: rgb(108, 108, 108) !important;
+    border: rgb(137, 137, 137) 1px solid !important;
+}
+/* https://i.imgur.com/OCSg8hD.jpeg */
+.customimage {
+    background-image: url("https://i.imgur.com/M5qnYlm.jpeg") !important;
+
+}
+
+.fptextbox {
+    display: none !important;
+}
+
+body .bg-white {
+    background-color: black !important;
+}
+
+.defaultuserpic {
+    border: 1px solid gray !important;
+}
+
+.page-link {
+    background-color: rgb(28, 28, 28) !important;
+}
+
+.calendar_event_course {
+    background-color: rgb(49, 49, 49) !important;
+    
+}
+
+.card-header {
+    background-color: rgb(28, 28, 28) !important;
+    border-radius: 16px 16px 0 0 !important;
+    color: white !important;
+}
+
+
+
+input {
+    background-color: rgb(28, 28, 28) !important;
+    color: white !important;
+    font-weight: 500 !important;
+    border-radius: 8px;
+}
+
+.form-control {
+    border-radius: 8px !important;
+}
+
+.btn-primary {
+    background-color: var(--accent) !important;
+    color: black !important;
+    border: none !important;
+}
+
+html body#page-login-index {
+    background-image: none !important;
+    background: black !important;
+    color: black !important;
+    
+}
+
+#page-footer {
+    visibility: hidden !important;
+}
+
+.dropdown-menu {
+    background-color: black !important;
+}
+
+.dropdown-item {
+    background-color: black !important;
+}
+
+.modal-body {
+    background-color: black !important;
+    color: rgb(108, 108, 108) !important;
+}
+
+.modal-footer {
+    background-color: black !important;
+    color: rgb(108, 108, 108) !important;
+}
+
+.modal-footer a {
+    font-weight: 600;
+}
+
+.modal-header {
+    background-color: var(--accent) !important;
+    color: black !important;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.body-container {
+    background-color: black !important;
+}
+
+.container-fluid {
+    background-color: black !important;
+}
+
+/* [data-region="content-messages-footer-container"] {
+    background-color: black !important;
+    color: white !important;
+
+}
+
+[data-region="view-conversation"] {
+    background-color: black !important;
+    color: white !important;
+}
+[data-region="content-messages-footer-container"] {
+    background-color: black !important;
+    color: white !important;
+} */
+
+.popover-region-header-container {
+    background-color: black !important;
+    color: white !important;
+}
+
+.popover-region-content-container {
+    background-color: black !important;
+}
+
+.popover-region-footer-container {
+    background-color: black !important;
+}
+
+.content-item-container{
+    background-color: black !important;
+    border-bottom: rgb(255, 255, 255) !important;
+}
+
+div > .content-item-container.unread {
+    background-color: rgb(28, 28, 28) !important;
+    border-bottom: 1px solid rgb(255, 255, 255) !important;
+    
+}
+
+[data-region="view-overview"] {
+    background-color: black !important;
+}
+
+[data-region="content-container"] {
+    background-color: black !important;
+}
+
+.context-link {
+    color: white !important;
+}
+
+.count-container[data-region="count-container"] {
+  background-color: var(--accent);
+}
+
+body .submissionstatussubmitted {
+    background-color: #386738 !important;
+    color: white !important;
+}
+
+body .submissionnotgraded {
+    background-color: rgb(49, 49, 49) !important;
+    color: white !important;
+}
+
+select {
+    background-color: black !important;
+    color: white !important;
+}
+
+option {
+    background-color: black !important;
+    color: white !important;
+}
+
+.description  {
+    background-color: black !important;
+    border: 1px solid rgb(28, 28, 28) !important;
+}
+
+.card-footer {
+    background-color: black !important;
+    border: 1px solid rgb(28, 28, 28) !important;
+}
+
+.card {
+    background-color: black !important;
+}
+
+body .bg-transparent {
+    background-color: black !important;
+}
+
+.message-app  {
+    background-color: rgb(28, 28, 28) !important;
+    border-radius: 16px !important;
+    border: 1px solid;
+}
+
+.message.received {
+    background-color: black !important;
+    
+    color: white !important;
+}
+
+textarea {
+    background-color: rgb(28, 28, 28) !important;
+    color: white !important;
+}
+
+body .bg-light {
+    background-color: rgb(28, 28, 28) !important;
+    color: white !important;
+}
+
+.tail {
+    background-color: black !important;
+}
+
+body .message.send {
+    background-color: rgb(28, 28, 28) !important;
+    color: white !important;
+}
+
+.page-header-headings {
+    color: white !important;
+    font-weight: bolder !important;
+}
+
+body .nav-link.active {
+    border: none !important;
+    background-color: rgb(28, 28, 28) !important;
+}
+
