@@ -450,3 +450,7 @@ body .nav-link.active {
 .pomodoro-btn:hover{
     background-color: rgb(28, 28, 28);
 }
+
+.modal-content {
+    background-color: black !important;
+}
