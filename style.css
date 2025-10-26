@@ -163,7 +163,7 @@ span {
 }
 
 .list-group-item:hover {
-    border:1px dashed var(--accent) !important;
+    border:1px solid var(--accent) !important;
 }
 
 .list-group-item-action:hover {
@@ -453,4 +453,64 @@ body .nav-link.active {
 
 .modal-content {
     background-color: black !important;
+}
+
+.editor_atto {
+    filter: invert(1);
+}
+
+.moodle-dialogue-hd {
+    background-color: black !important;
+    color: white !important;
+}
+
+.moodle-dialogue-bd {
+    background-color: black !important;
+    color: white !important;
+}
+
+.fp-filename {
+    background-color: rgb(28, 28, 28) !important;
+    color: white !important;
+}
+
+.thispageholder {
+    border-color: black !important
+}
+
+table.quizreviewsummary {
+    filter: invert(1);
+}
+
+.formulation {
+    background-color: black !important;
+    color: rgb(108, 108, 108) !important;
+    border-radius: 8px;
+    border: 1px solid rgb(28, 28, 28) !important;
+}
+
+.info {
+    background-color: black !important;
+    color: rgb(108, 108, 108) !important;
+}
+
+.info .state {
+    color: rgb(0, 168, 70) !important;
+}
+
+.outcome {
+    background-color: rgb(49, 49, 49) !important;
+    color: white !important;
+}
+
+.rightanswer > p {
+    color: rgb(0, 168, 70) !important;
+}
+
+.trafficlight {
+    background-color: #5cb85c !important;
+}
+
+body [data-region="drawer"]:active {
+    color: black !important;
 }
