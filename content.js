@@ -59,7 +59,7 @@ function tick() {
             sonidoDescanso.play();
             btnPomodoro.textContent = "Se acabó el tiempo de descanso";
             btnPomodoro.style.backgroundColor = "#ffbf00";
-            btnPomodoro.style.color = "black";
+            btnPomodoro.style.color = "var(--accent-sec)";
             enDescanso = false;
             totalSegundos = tiempoPomodoro;
             setTimeout(() => {
@@ -74,7 +74,7 @@ function iniciarPomodoro() {
     if (!estaCorriendo) {
         estaCorriendo = true;
         btnPomodoro.style.backgroundColor = "var(--accent)";
-        btnPomodoro.style.color = "black";
+        btnPomodoro.style.color = "var(--accent-sec)";
         intervaloID = setInterval(tick, 1000);
     }
 }
@@ -85,7 +85,7 @@ function detenerPomodoro() {
         estaCorriendo = false;
         btnPomodoro.textContent = `||`;
         btnPomodoro.style.backgroundColor = "#ffbf00";
-        btnPomodoro.style.color = "black";
+        btnPomodoro.style.color = "var(--accent-sec)";
     }
 }
 

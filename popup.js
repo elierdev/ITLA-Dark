@@ -29,25 +29,27 @@ document.querySelectorAll(".color").forEach(el => {
             // Cambiar variables de acento principales
             document.documentElement.style.setProperty("--accent", color);
 
-            // Generar un segundo tono para --accent-sec (más oscuro)
-            const adjust = (c, amt) => {
-              let usePound = false;
-              if (c[0] === "#") {
-                c = c.slice(1);
-                usePound = true;
-              }
-              let num = parseInt(c, 16);
-              let r = (num >> 16) + amt;
-              let g = ((num >> 8) & 0x00FF) + amt;
-              let b = (num & 0x0000FF) + amt;
-              r = Math.min(255, Math.max(0, r));
-              g = Math.min(255, Math.max(0, g));
-              b = Math.min(255, Math.max(0, b));
-              return (usePound ? "#" : "") + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1);
+            // Generar un fondo oscuro basado en el tono del color principal
+            const createDarkBackground = (hexColor) => {
+              // Convertir hex a RGB
+              let r = parseInt(hexColor.slice(1, 3), 16);
+              let g = parseInt(hexColor.slice(3, 5), 16);
+              let b = parseInt(hexColor.slice(5, 7), 16);
+              
+              // Reducir cada canal a una fracción muy pequeña (creando un fondo casi negro con tinte del color)
+              r = Math.floor(r * 0.04);
+              g = Math.floor(g * 0.04);
+              b = Math.floor(b * 0.04);
+              
+              // Convertir de vuelta a hex
+              return "#" + [r, g, b].map(x => {
+                const hex = x.toString(16);
+                return hex.length === 1 ? "0" + hex : hex;
+              }).join("");
             };
 
-            const darker = adjust(color, -30);
-            document.documentElement.style.setProperty("--accent-sec", darker);
+            const darkBg = createDarkBackground(color);
+            document.documentElement.style.setProperty("--accent-sec", darkBg);
           },
           args: [color]
         });
@@ -64,23 +66,27 @@ chrome.storage.sync.get("accentColor", ({ accentColor }) => {
         target: { tabId: tabs[0].id },
         func: (color) => {
           document.documentElement.style.setProperty("--accent", color);
-          const adjust = (c, amt) => {
-            let usePound = false;
-            if (c[0] === "#") {
-              c = c.slice(1);
-              usePound = true;
-            }
-            let num = parseInt(c, 16);
-            let r = (num >> 16) + amt;
-            let g = ((num >> 8) & 0x00FF) + amt;
-            let b = (num & 0x0000FF) + amt;
-            r = Math.min(255, Math.max(0, r));
-            g = Math.min(255, Math.max(0, g));
-            b = Math.min(255, Math.max(0, b));
-            return (usePound ? "#" : "") + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1);
+          // Generar un fondo oscuro basado en el tono del color principal
+          const createDarkBackground = (hexColor) => {
+            // Convertir hex a RGB
+            let r = parseInt(hexColor.slice(1, 3), 16);
+            let g = parseInt(hexColor.slice(3, 5), 16);
+            let b = parseInt(hexColor.slice(5, 7), 16);
+            
+            // Reducir cada canal a una fracción muy pequeña (creando un fondo casi negro con tinte del color)
+            r = Math.floor(r * 0.04);
+            g = Math.floor(g * 0.04);
+            b = Math.floor(b * 0.04);
+            
+            // Convertir de vuelta a hex
+            return "#" + [r, g, b].map(x => {
+              const hex = x.toString(16);
+              return hex.length === 1 ? "0" + hex : hex;
+            }).join("");
           };
-          const darker = adjust(color, -30);
-          document.documentElement.style.setProperty("--accent-sec", darker);
+
+          const darkBg = createDarkBackground(color);
+          document.documentElement.style.setProperty("--accent-sec", darkBg);
         },
         args: [accentColor]
       });
